@@ -9,11 +9,13 @@
     android:layout_marginTop="4dp"
     android:layout_marginEnd="8dp"
     android:layout_marginBottom="4dp"
-    app:cardCornerRadius="16dp">
+    app:cardElevation="2dp"
+    app:cardCornerRadius="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
         <ImageView
             android:id="@+id/iv_item_image"
@@ -22,7 +24,7 @@
             android:background="@android:color/white"
             android:contentDescription="@string/image_description"
             android:scaleType="centerCrop"
-            app:layout_constraintDimensionRatio="H,1.5:1"
+            app:layout_constraintDimensionRatio="H,2.6:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -40,7 +42,7 @@
             android:id="@+id/top_space"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toTopOf="@+id/tv_item_title"
             app:layout_constraintStart_toStartOf="parent" />
 
